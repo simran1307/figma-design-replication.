@@ -136,17 +136,27 @@ nav ul li a {
 }
 
 .play-button {
+    height: 50px;
+    width: 50px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
+    color: #3c00a5;
     opacity: 1;
-    background-color: rgb(255, 255, 255);
-    color: rgba(255, 63, 78, 1);
-    font-size: 24px;
+    background-color: rgb(220, 216, 216);
+    color: rgb(195, 53, 65);
     border-radius: 50%;
-    padding: 10px;
+    padding: 1px;
     cursor: pointer;
+}
+
+.play-button i{
+    position: absolute;
+    padding-top: 33px;
+    transform: translate(-50%, -50%);
+
+   align-items: center;
 }
 .circle{
 height: 60px;
@@ -525,7 +535,7 @@ padding: 2rem;
 }
 
 .popup {
-    z-index: 3;
+    z-index: 1001;
     display: none;
     position: fixed;
     top: 0;
@@ -657,4 +667,16 @@ padding: 2rem;
     .popup-content {
         width: 95%;
     }
+}
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(105, 86, 213, 0.5); /* Semi-transparent black overlay */
+        z-index: 1000; /* Ensure it's above other content */
+        display: none; /* Initially hidden */
+    
 }

@@ -76,3 +76,26 @@ function popup(){
 
 
 popup()
+
+
+var bookSessionBtn = document.getElementById('bookDemoBtn');
+
+    // Add event listener to the button
+    bookSessionBtn.addEventListener('click', function() {
+        var overlay = document.querySelector('.overlay');
+        var popup = document.querySelector('.popup');
+        
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+    });
+    
+    function closePopup() {
+        var overlay = document.querySelector('.overlay');
+        var popup = document.querySelector('.popup');
+        
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    }
+
+showPopup()
+closePopup()
