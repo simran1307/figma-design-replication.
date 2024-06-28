@@ -50,3 +50,29 @@ function movedots(){
 movedots()
 
 
+function popup(){
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const popup = document.getElementById('popup');
+        const bookDemoBtn = document.getElementById('bookDemoBtn');
+        const closeBtn = document.querySelector('.close-btn');
+    
+        bookDemoBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            popup.style.display = 'flex';
+        });
+    
+        closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+    
+        window.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    });
+}
+
+
+popup()

@@ -24,10 +24,47 @@
                 <li><a href="#">About</a></li>
             </ul>
             <div class="cta">
-                <a href="#" class="btn">Book a Free Demo</a>
+                <a href="#" id="bookDemoBtn" class="btn">Book a Free Demo</a>
+               
             </div>
         </nav>
         
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+
+                <div class="head">
+                    <h2>Book Demo Session</h2>
+                    <p>Only 4 Spots Left!</p>
+                </div>
+               <div class="formentry">
+                <form id="demoForm">
+                    <input type="text" id="fullName" name="fullName" placeholder="Simran Swaraj" required>
+                    <input type="email" id="email" name="email" placeholder="Email Id" required>
+                    <div class="phone-container">
+                        <select id="countryCode" name="countryCode" required>
+                            <option value="+91" selected>+91</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter mobile number" required>
+                    </div>
+                    <input type="text" id="babyStage" name="babyStage" placeholder="Select Baby Stage" required>
+                    <button type="submit" class="btn-apply">Apply Now</button>
+                </form>
+                <p class="terms">
+                  <h5>UpTodd’s <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> for complete data security</h5>
+                </p>
+                <div class="security">
+                    <img src="avast.jpg" alt="Avast">
+                    <img src="lock.jpg" alt="HTTPS">
+                </div>
+
+               </div>
+               
+            </div>
+        </div>
+    
+                
+
     </header>
     <section class="hero">
         <h4>Achievers</h4>

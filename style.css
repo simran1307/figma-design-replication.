@@ -507,3 +507,154 @@ justify-content: space-evenly;
     }
 
 }
+
+
+
+/* pop-up style */
+
+
+.head{
+    padding: 1rem;
+    background-color:#5A40C4;
+    text-align: left;
+}
+.formentry{
+justify-content: space-between;
+padding: 2rem;
+    
+}
+
+.popup {
+    z-index: 3;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+   
+    background: #fff;
+    /* padding: 2rem; */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 440px;
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup-content h2 {
+
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.popup-content p {
+    color: #ffffff;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content form input, .popup-content form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-container {
+    display: flex;
+    width: 100%;
+}
+::placeholder{
+    color: #002863;
+    font-weight: medium;
+}
+
+.phone-container .countrycode{
+    width: calc(50% - 10px);
+    margin-right: 10px; 
+}
+
+.phone-container select {
+    flex: 1;
+    width: 20%;
+    margin-right: 0.5rem;
+}
+
+.country-code-input{
+    flex: 0 0 auto;
+    max-width: 50px;
+}
+
+.phone-container input[type="text"]{
+    flex: 1;
+    padding: 0.5rem;
+}
+
+#demoForm input,
+#demoForm select{
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.btn-apply {
+    background:#FF3F4E;
+    color: #fff;
+    padding: 1rem 8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.terms {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #000000;
+}
+.terms h5{
+    color: black;
+}
+
+.terms a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.security {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.security img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+    .popup-content {
+        width: 95%;
+    }
+}
